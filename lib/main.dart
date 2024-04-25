@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vault_app/debug_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -116,9 +117,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const DebugScreen(),
+            )),
+        child: const Icon(Icons.bug_report),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
