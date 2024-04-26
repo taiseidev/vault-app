@@ -1,0 +1,5 @@
+appId: jp.vault_app.dev
+---
+- launchApp:
+    clearState: true
+- runFlow: "android/tap.yaml"

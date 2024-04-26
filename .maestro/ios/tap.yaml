@@ -1,0 +1,7 @@
+appId: jp.vault-app.dev
+---
+- extendedWaitUntil:
+    visible: "認証コード入力画面に遷移"
+    timeout: 10000
+- tapOn:
+    text: "認証コード入力画面に遷移"
