@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC6PmSo-ZhlvciIyzMUJ-EF3iBw6_NPvh4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>90180175178</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.vault-app.stg</string>
+	<key>PROJECT_ID</key>
+	<string>vault-app-project-stg</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vault-app-project-stg.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:90180175178:ios:235eecde0271ade6adedb3</string>
+</dict>
+</plist>
