@@ -1,0 +1,11 @@
+//
+//  dev.xcconfig
+//  Runner
+//
+//  Created by 大西泰生 on 2024/04/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+FLAVOR=dev
+APP_ID_SUFFIX=.dev

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "904864147727",
+    "project_id": "vault-app-project-dev",
+    "storage_bucket": "vault-app-project-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904864147727:android:210bb1c17b668830ad767a",
+        "android_client_info": {
+          "package_name": "jp.vault_app.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCug8NfqkRZ3uNQaUe7lCQQ7bHeyMJZrng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
