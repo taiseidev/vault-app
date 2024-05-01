@@ -18,7 +18,7 @@ class AuthCodeInputPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => const NotificationConsentRoute().go(context),
               child: const Text('通知許諾画面に遷移'),
-            )
+            ),
           ],
         ),
       ),

@@ -7,7 +7,7 @@ const calendarTypedStatefulShellBranch =
     TypedStatefulShellBranch<CalendarBranch>(
   routes: <TypedRoute<RouteData>>[
     TypedGoRoute<CalendarRoute>(
-      path: "/calendar",
+      path: '/calendar',
     ),
   ],
 );

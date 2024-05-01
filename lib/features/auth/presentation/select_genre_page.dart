@@ -18,7 +18,7 @@ class SelectGenrePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => const RegisterCompleteRoute().go(context),
               child: const Text('登録完了画面に遷移'),
-            )
+            ),
           ],
         ),
       ),

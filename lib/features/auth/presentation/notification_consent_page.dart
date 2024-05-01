@@ -18,7 +18,7 @@ class NotificationConsentPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => const SelectGenreRoute().go(context),
               child: const Text('ジャンル選択画面に遷移'),
-            )
+            ),
           ],
         ),
       ),

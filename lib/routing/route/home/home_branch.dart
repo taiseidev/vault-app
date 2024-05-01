@@ -6,7 +6,7 @@ import '../../../features/home/presentation/home_page.dart';
 const homeTypedStatefulShellBranch = TypedStatefulShellBranch<HomeBranch>(
   routes: <TypedRoute<RouteData>>[
     TypedGoRoute<HomeRoute>(
-      path: "/home",
+      path: '/home',
     ),
   ],
 );

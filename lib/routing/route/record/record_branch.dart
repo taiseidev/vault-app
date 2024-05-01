@@ -6,7 +6,7 @@ import '../../../features/record/presentation/record_page.dart';
 const recordTypedStatefulShellBranch = TypedStatefulShellBranch<RecordBranch>(
   routes: <TypedRoute<RouteData>>[
     TypedGoRoute<RecordRoute>(
-      path: "/record",
+      path: '/record',
     ),
   ],
 );

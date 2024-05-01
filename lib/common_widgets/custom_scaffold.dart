@@ -14,13 +14,13 @@ class CustomScaffold extends StatelessWidget {
   final Widget body;
   final Widget? floatingActionButton;
   final bool canPop;
-  final Function(bool)? onPopInvoked;
+  final void Function({required bool didPop})? onPopInvoked;
 
   @override
   Widget build(BuildContext context) {
     return PopScope(
       canPop: canPop,
-      onPopInvoked: onPopInvoked,
+      onPopInvoked: (didPop) => onPopInvoked?.call(didPop: didPop),
       child: Scaffold(
         appBar: appBar,
         body: body,

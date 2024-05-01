@@ -55,13 +55,13 @@ class InitRoute extends GoRouteData {
               routes: [
                 TypedGoRoute<RegisterCompleteRoute>(
                   path: 'register-complete',
-                )
+                ),
               ],
-            )
+            ),
           ],
-        )
+        ),
       ],
-    )
+    ),
   ],
 )
 class AuthRoute extends GoRouteData {
@@ -93,8 +93,9 @@ class MainRoute extends StatefulShellRouteData {
     StatefulNavigationShell navigationShell,
   ) {
     return fadePageTransition(
-        context: context,
-        state: state,
-        child: ScaffoldWithNavigation(navigationShell: navigationShell));
+      context: context,
+      state: state,
+      child: ScaffoldWithNavigation(navigationShell: navigationShell),
+    );
   }
 }

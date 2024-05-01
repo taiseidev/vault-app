@@ -18,7 +18,7 @@ class RegisterCompletePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => const HomeRoute().go(context),
               child: const Text('メイン画面に遷移'),
-            )
+            ),
           ],
         ),
       ),

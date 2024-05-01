@@ -5,7 +5,7 @@ class DebugScreen extends StatelessWidget {
   const DebugScreen({super.key});
 
   Future<PackageInfo> _getPackageInfo() async {
-    return await PackageInfo.fromPlatform();
+    return PackageInfo.fromPlatform();
   }
 
   Widget title(String title) => Text(

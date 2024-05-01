@@ -5,7 +5,7 @@ import 'package:vault_app/features/setting/presentation/setting_page.dart';
 const settingTypedStatefulShellBranch = TypedStatefulShellBranch<SettingBranch>(
   routes: <TypedRoute<RouteData>>[
     TypedGoRoute<SettingRoute>(
-      path: "/setting",
+      path: '/setting',
     ),
   ],
 );

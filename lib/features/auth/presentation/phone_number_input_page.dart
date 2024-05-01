@@ -18,7 +18,7 @@ class PhoneNumberInputPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => const AuthCodeInputRoute().go(context),
               child: const Text('認証コード入力画面に遷移'),
-            )
+            ),
           ],
         ),
       ),
