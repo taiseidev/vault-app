@@ -6,6 +6,7 @@ import 'package:vault_app/routing/route/auth/auth_code_input_route.dart';
 import 'package:vault_app/routing/route/auth/register_complete_route.dart';
 import 'package:vault_app/routing/route/auth/select_genre_route.dart';
 
+import '../../common_widgets/media_page.dart';
 import '../../common_widgets/scaffold_with_navigation.dart';
 import '../../features/init/presentation/init_page.dart';
 import '../animation/routing_animation.dart';
@@ -98,4 +99,63 @@ class MainRoute extends StatefulShellRouteData {
       child: ScaffoldWithNavigation(navigationShell: navigationShell),
     );
   }
+}
+
+/// メディアのルート
+///
+/// メディア（ドラマ・映画）の詳細画面から遷移するルート
+@TypedGoRoute<MediaRoute>(
+  path: '/media',
+  routes: [
+    TypedGoRoute<ReviewRoute>(
+      path: 'review',
+    ),
+    TypedGoRoute<ActorRoute>(
+      path: 'actor',
+    ),
+    TypedGoRoute<DirectorRoute>(
+      path: 'director',
+    ),
+    TypedGoRoute<GenreRoute>(
+      path: 'genre',
+    ),
+  ],
+)
+class MediaRoute extends GoRouteData {
+  const MediaRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) => const MediaPage();
+}
+
+class ReviewRoute extends GoRouteData {
+  const ReviewRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) =>
+      const SizedBox.shrink();
+}
+
+class ActorRoute extends GoRouteData {
+  const ActorRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) =>
+      const SizedBox.shrink();
+}
+
+class DirectorRoute extends GoRouteData {
+  const DirectorRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) =>
+      const SizedBox.shrink();
+}
+
+class GenreRoute extends GoRouteData {
+  const GenreRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) =>
+      const SizedBox.shrink();
 }

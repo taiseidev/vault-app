@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vault_app/common_widgets/custom_scaffold.dart';
+import 'package:vault_app/common_widgets/media_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,8 +14,11 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
-              child: const Text('画面へ'),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MediaPage()),
+              ),
+              child: const Text('メディア詳細画面に遷移'),
             ),
           ],
         ),

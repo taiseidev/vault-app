@@ -10,6 +10,7 @@ List<RouteBase> get $appRoutes => [
       $initRoute,
       $authRoute,
       $mainRoute,
+      $mediaRoute,
     ];
 
 RouteBase get $initRoute => GoRouteData.$route(
@@ -250,6 +251,114 @@ extension $SettingRouteExtension on SettingRoute {
 
   String get location => GoRouteData.$location(
         '/setting',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+RouteBase get $mediaRoute => GoRouteData.$route(
+      path: '/media',
+      factory: $MediaRouteExtension._fromState,
+      routes: [
+        GoRouteData.$route(
+          path: 'review',
+          factory: $ReviewRouteExtension._fromState,
+        ),
+        GoRouteData.$route(
+          path: 'actor',
+          factory: $ActorRouteExtension._fromState,
+        ),
+        GoRouteData.$route(
+          path: 'director',
+          factory: $DirectorRouteExtension._fromState,
+        ),
+        GoRouteData.$route(
+          path: 'genre',
+          factory: $GenreRouteExtension._fromState,
+        ),
+      ],
+    );
+
+extension $MediaRouteExtension on MediaRoute {
+  static MediaRoute _fromState(GoRouterState state) => const MediaRoute();
+
+  String get location => GoRouteData.$location(
+        '/media',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $ReviewRouteExtension on ReviewRoute {
+  static ReviewRoute _fromState(GoRouterState state) => const ReviewRoute();
+
+  String get location => GoRouteData.$location(
+        '/media/review',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $ActorRouteExtension on ActorRoute {
+  static ActorRoute _fromState(GoRouterState state) => const ActorRoute();
+
+  String get location => GoRouteData.$location(
+        '/media/actor',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $DirectorRouteExtension on DirectorRoute {
+  static DirectorRoute _fromState(GoRouterState state) => const DirectorRoute();
+
+  String get location => GoRouteData.$location(
+        '/media/director',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $GenreRouteExtension on GenreRoute {
+  static GenreRoute _fromState(GoRouterState state) => const GenreRoute();
+
+  String get location => GoRouteData.$location(
+        '/media/genre',
       );
 
   void go(BuildContext context) => context.go(location);
