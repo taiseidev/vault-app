@@ -174,6 +174,14 @@ RouteBase get $mainRoute => StatefulShellRouteData.$route(
         StatefulShellBranchData.$branch(
           routes: [
             GoRouteData.$route(
+              path: '/radio',
+              factory: $RadioRouteExtension._fromState,
+            ),
+          ],
+        ),
+        StatefulShellBranchData.$branch(
+          routes: [
+            GoRouteData.$route(
               path: '/calendar',
               factory: $CalendarRouteExtension._fromState,
             ),
@@ -216,6 +224,23 @@ extension $RecordRouteExtension on RecordRoute {
 
   String get location => GoRouteData.$location(
         '/record',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $RadioRouteExtension on RadioRoute {
+  static RadioRoute _fromState(GoRouterState state) => const RadioRoute();
+
+  String get location => GoRouteData.$location(
+        '/radio',
       );
 
   void go(BuildContext context) => context.go(location);

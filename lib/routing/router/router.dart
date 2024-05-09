@@ -5,6 +5,7 @@ import 'package:vault_app/features/auth/presentation/phone_number_input_page.dar
 import 'package:vault_app/routing/route/auth/auth_code_input_route.dart';
 import 'package:vault_app/routing/route/auth/register_complete_route.dart';
 import 'package:vault_app/routing/route/auth/select_genre_route.dart';
+import 'package:vault_app/routing/route/radio/radio_branch.dart';
 
 import '../../common_widgets/scaffold_with_navigation.dart';
 import '../../features/init/presentation/init_page.dart';
@@ -79,6 +80,7 @@ class AuthRoute extends GoRouteData {
   branches: <TypedStatefulShellBranch<StatefulShellBranchData>>[
     homeTypedStatefulShellBranch,
     recordTypedStatefulShellBranch,
+    radioTypedStatefulShellBranch,
     calendarTypedStatefulShellBranch,
     settingTypedStatefulShellBranch,
   ],

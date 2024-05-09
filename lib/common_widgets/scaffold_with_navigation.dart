@@ -25,6 +25,10 @@ class ScaffoldWithNavigation extends StatelessWidget {
             label: '記録',
           ),
           NavigationDestination(
+            icon: Icon(Icons.radio),
+            label: 'ラジオ',
+          ),
+          NavigationDestination(
             icon: Icon(Icons.calendar_month),
             label: 'カレンダー',
           ),
